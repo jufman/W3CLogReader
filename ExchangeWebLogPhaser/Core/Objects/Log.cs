@@ -28,6 +28,9 @@ namespace W3CLogReader.Core.Objects
             treeView.Items.Add("User Agent: " + UserAgent);
             treeView.Items.Add("Date Time: " + DateTime);
             treeView.Items.Add("Client IP: " + ClientIp);
+            treeView.Items.Add("Status: " + Status);
+            treeView.Items.Add("URL: " + Uri);
+            treeView.Items.Add("URL Query: " + UriQuery);
 
             return treeView;
         }

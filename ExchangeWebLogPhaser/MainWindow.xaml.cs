@@ -182,7 +182,14 @@ namespace W3CLogReader
                         continue;
                     }
 
+                    /*
                     if (lineParts[11] != "401" || lineParts[7] == "-")
+                    {
+                        continue;
+                    }
+                    */
+
+                    if (lineParts[11] == "200" || lineParts[7] == "-" || lineParts[11] == "500" || lineParts[11] == "302" || lineParts[8].StartsWith("10."))
                     {
                         continue;
                     }
